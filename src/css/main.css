@@ -1,0 +1,528 @@
+body, html {
+    scroll-behavior: smooth;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#d1ad4a 30%, #1D121F 50%);
+    scroll-margin-top: 25vh;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+nav {
+    padding: 1vh 0;
+    background-color: #1D121F;
+    /* text-align: right; */
+    display: flex;
+    gap: 7vw;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+header{
+    padding: 1vh 0;
+    background-color: #1D121F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+
+header > a > img{
+    height: 6vh;
+    margin-left: 2vw;
+}
+
+#hamb {
+    display: none;
+}
+
+nav > a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-family: "IM Fell DW Pica SC", serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 20vw; */
+    row-gap: 4vw;
+}
+
+
+.download-button {
+    color: #1D121F;
+    background-color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+main {
+    padding-top: 25vh;
+    background-image: linear-gradient(#d1ad4a);
+    background-image: linear-gradient(#24111123 25%, #1D121F);
+    flex: 1;
+}
+
+.main-wrapper {
+    position: relative;
+}
+
+.hero-sect {  
+    background-image: url('../img/alt_hero_edit_lesser.png'), linear-gradient(#d1ad4a, #1D121F 60%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    position: relative;
+    z-index: 1;
+}
+
+.shadow {
+    background-image: linear-gradient(#24111123 , #24111196);
+    height: 100%;
+}
+
+.hero-txt {
+    display: flex;
+    flex-direction: column;
+    font-size: 3vw;
+    margin-left: 10vw;
+    width: fit-content;
+    text-align: left;
+}
+
+h1, h2 {
+    font-family: "IM Fell Great Primer SC", serif;
+    color: aliceblue;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.hero-txt > h3 {
+    color: aliceblue;
+    font-family: "IM Fell DW Pica SC", serif;
+    margin: 0;
+    font-size: 3vw;
+}
+
+.aft-hr {
+    position: absolute;
+    top: 60vh;
+    left: 0;
+    width: 100%;
+    background-color: #2a152d;
+    border-radius: 20px;
+    border-top: solid #fff 3px;
+    z-index: 2;
+    scroll-margin-top: 10vh;
+}
+
+.aft-hr > h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+    padding: 2vh 0 5vh;
+}
+
+.book-sect {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(to right, #ffcd4236 0%, #ebe0c43b 100%);
+    padding: 2vw 0;
+    justify-content: space-around;
+}
+
+.book-format {
+    padding: 2vh 2vw;
+    border-radius: 30px;
+    background-color: rgba(17, 10, 18, 0.6);
+    width: max-content;
+    height: fit-content;
+    color: aliceblue;
+    font-family: "IM Fell Great Primer SC", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: #1D121F 0 0 5px;
+}
+
+.book-format > img {
+    width: 14vw;
+}
+
+.book-format > h3, .book-format > p {
+    font-size: 1.4vw;
+    margin: 0;
+    width: 14vw;
+    padding: 1vh 0 0;
+    text-align: left;
+}
+
+.book-format > p {
+    opacity: 0.5;
+    font-size: 1.2vw;
+}
+
+.about {
+    color: aliceblue;
+    width: 45vw;
+    margin: auto;
+    margin-top: 18vw;
+    margin-bottom: 18vw;
+    font-size: 2.4vh;
+    font-family: "IM Fell DW Pica SC", serif;
+    scroll-margin-top: 40vh;
+}
+
+.about > h2 {
+    font-size: 3.5vw;
+}
+
+hr {
+    color: #ffcc42;
+}
+
+.download-sect {
+    display: flex;
+    justify-content: center;
+    background-color: #1d121f;
+    padding: 5vw;
+    border-top: solid 3px #e9ba3a; 
+    border-bottom: solid 3px #e9ba3a;
+    scroll-margin-top: 35vh;
+}
+
+.download-sect > h3 > a {
+    background-color: #e9ba3a;
+    color: #1d121f;
+    font-family: "IM Fell Great Primer SC", serif;
+    padding: 1vw 5vw;
+    border-radius: 60px;
+    font-size: 3vw;
+    text-decoration: none;
+    text-decoration-color: #1D121F;
+}
+
+/* .ellipse1 {
+    width: 10vw;
+
+    height: 5vw;
+
+  background: gold;
+
+  border-radius: 5vw 5vw 0 0;
+  transform: rotate(90deg);
+
+    /* -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+} */
+
+
+.user-guide {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    margin: auto;
+    margin-top: 35vh;
+    margin-bottom: 18vh;
+    padding: 2vw 6vw;
+    border-radius: 350px;
+    border: solid 2.5px #ffffff09;
+    background-image: linear-gradient(to bottom, #ffffff0a, #ffffff36);
+    scroll-margin-top: 35vh;
+}
+
+.user-guide-2 {
+    width: 50vh;
+    padding: 2vw 10vw;
+    border: solid 2px #ffffff99;
+    border-radius: 250px;
+    background-image: linear-gradient(to bottom, #ffffff85, #ffffff11);
+    color: #2a152d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-guide-2 > h2 {
+    background-color: #2a152d;
+    color: #d9d9d9;
+    width: 15vw;
+    padding: 0.5vh 3vw;
+    border-radius: 50px;
+    font-size: 2.5vw;
+}
+
+.user-guide-2 > p {
+    font-family: "IM Fell DW Pica SC", serif;
+    font-size: 2.2vh;
+}
+
+.user-guide-2 > h3  > a{
+    color: aliceblue;
+    text-decoration: none;
+    background-image: linear-gradient( #532260, #2a152d);
+    font-family: "IM Fell Great Primer SC", serif;
+    padding: 0.5vh 2vw;
+    font-size: 2vw;
+    border: solid 4px #d9d9d9;
+    border-radius: 25px;
+    margin: 0;
+}
+
+.invis-padding {
+    /* min-height: 260vw; */
+    height: calc(105vh + 90vw);
+}
+
+footer {
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1d121f;
+    color: #ffcc42;
+    z-index: 90;
+}
+
+footer > hr {
+    width: 40%;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.icons > a > img {
+    width: 3.5vw;
+}
+
+.foot-extra {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    margin-top: 1.5vh;
+}
+
+.foot-extra > a {
+    text-decoration: none;
+    color: #ffcc42;   
+    font-family: "IM Fell DW Pica SC", serif;
+    font-size: 1.5vw;
+}
+
+footer > p {
+    font-family: "IM Fell Great Primer SC", serif;
+    font-size: 1vw;
+    margin: 0;
+    margin-bottom: 2vh;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        overflow: hidden;
+        background-color: #1D121F;
+        position: fixed;
+        display: flex;
+        justify-content: left;
+    }
+
+    header > a > img {
+        display: flex;
+        position: absolute;
+        top: 1vh;
+        left: 4vw;
+        height: 8vw;
+    }
+
+    #links {
+        display: none;
+        flex-direction: column;
+    }
+
+    #links.active {
+        display: flex;
+    }
+
+    #hamb {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    header > a {
+        color: aliceblue;
+        padding: 3vw 6vw 5vw 1vw;
+        text-decoration: none;
+        font-size: 5vw;
+    }
+
+    header a:hover {
+        opacity: 0.8;
+    } 
+
+    nav {
+        margin-top: 10vw;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    nav > a {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        padding: 2vw 0;
+        font-size: 5vw;
+    }
+
+    .download-button {
+        width: fit-content;
+        background-color:transparent;
+        color: aliceblue;
+        padding: 2vw 0;
+    }
+
+    .hero-sect {
+        height: 125vh;
+    }
+
+    .hero-txt {
+        font-size: 6vw;
+        margin-top: -10vh;
+        margin-left: 6vw;
+    }
+
+    .hero-txt > h3 {
+        font-size: 8vw;
+    }
+
+    .aft-hr {
+        top: 70vh;
+        border-top: solid aliceblue 1.5px;
+    }
+
+    .aft-hr > h2 {
+        font-size: 8.5vw;
+        margin-top: 2vh;
+    }
+
+    .book-sect {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .book-format {
+        height: fit-content;
+        margin: 4vh 0;
+        border-radius: 15px;
+        padding: 2vh;
+    }
+
+    .book-format > img {
+        width: 45vw;
+    }
+
+    .book-format > h3, .book-format > p  {
+        width: 100%;
+        font-size: 2vh;
+    }
+
+    .book-format > p {
+        font-size: 1.5vh;
+    }
+
+    .about {
+        width: 80vw;
+        text-align: justify;
+        margin-bottom: 25vh;
+    }
+
+    .about > h2 {
+        font-size: 4vh;
+        text-align: center;
+    }
+
+    .download-sect > h3 > a {
+        font-size: 5vh;
+    }
+
+    .user-guide {
+        width: fit-content;
+        border-radius: 0;
+        border: none;
+        padding-top: 15vh;
+        padding-bottom: 15vh;
+        background-image: linear-gradient(to bottom, #ffffff00, #ffffff36, #ffffff00);
+
+    }
+
+    .user-guide-2 {
+        width: 100%;
+        border-radius: 30px;
+        border: none;
+        padding-top: 3vh;
+        background-image: linear-gradient(to bottom, #ffffff00, #ffffff5d, #ffffff54, #ffffff5d, #ffffff00);
+        box-shadow: #d9d9d91e 0 0 8px;
+        text-align: justify;
+    }
+
+    .user-guide-2 > h2 {
+        font-size: 3.5vh;
+        width: fit-content;
+    }
+
+    .user-guide-2 > h3 > a {
+        font-size: 3vh;
+        border: solid 1px #d9d9d9;
+    }
+
+    .invis-padding {
+        height: calc(230vh + 230vw);
+    }
+
+    .icons {
+        gap: 4vw;
+    }
+
+    .icons > a > img {
+        width: 8vw;
+    }
+
+    footer > hr {
+        width: 80%;
+    }
+
+    .foot-extra {
+        margin-top: 3vh;
+    }
+
+    .foot-extra > a {
+        font-size: 4vw;
+    }
+
+    footer > p {
+        font-size: 2.5vw;
+    }
+
+  }
