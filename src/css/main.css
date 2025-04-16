@@ -192,9 +192,9 @@ h1, h2 {
 }
 
 hr {
-    color: #ffcc42;
+    height: 1px;
     background-color: #ffcc42;
-    border-top: solid 2px #ffcc42;
+    border: none;
 }
 
 .download-sect {
