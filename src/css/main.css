@@ -467,6 +467,10 @@ footer > p {
         font-size: 5vh;
     }
 
+    .download-sect {
+        scroll-margin-top: 30vh;    
+    }
+    
     .user-guide {
         width: fit-content;
         border-radius: 0;
