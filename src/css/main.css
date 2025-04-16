@@ -335,7 +335,7 @@ footer > p {
     opacity: 0.5;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
     header {
         overflow: hidden;
