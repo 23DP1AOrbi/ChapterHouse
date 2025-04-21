@@ -337,7 +337,7 @@ hr {
     color: #d9d9d9;
     width: 15vw;
     padding: 0.5vh 3vw;
-    border-radius: 50px;
+    border-radius: 24px;
     font-size: 2.5vw;
 }
 
@@ -346,7 +346,7 @@ hr {
     font-size: 2.2vh;
 }
 
-.user-guide-2 > h3  > a {
+#userGuide {
     color: aliceblue;
     text-decoration: none;
     background-image: linear-gradient( #532260, #2a152d);
@@ -354,13 +354,16 @@ hr {
     padding: 0.5vh 2vw;
     font-size: 2vw;
     border: solid 3px #d9d9d9;
-    border-radius: 25px;
+    border-radius: 15px;
     margin: 0;
 }
 
+#userGuide:hover {
+    opacity: 0.9;
+}
+
 .invis-padding {
-    /* min-height: 260vw; */
-    height: calc(100vh + 120vw);
+    height: calc(90vh + 120vw);
 }
 
 footer {
@@ -462,7 +465,7 @@ footer > p {
     }
 
     .invis-padding {
-        height: calc(100vh + 115vw);
+        height: calc(100vh + 100vw);
     }
 
     .icon-wrap > a > img {
@@ -526,7 +529,7 @@ footer > p {
     }
 
     .invis-padding {
-        height: calc(105vh + 115vw);
+        height: calc(95vh + 100vw);
     }
 
     footer > hr {
@@ -575,18 +578,33 @@ footer > p {
         font-size: 3vw;
     }
 
+    .invis-padding {
+        height: calc(85vh + 95vw);
+    }
+
     .border-spin {
         display: none;
     }
 }
 
+@media screen and (max-width: 800px) {
+
+    .user-guide-2 > p {
+        font-size: 1.7vh;
+    }
+
+    .invis-padding {
+        height: calc(75vh + 85vw);
+    }
+}
+
 @media screen and (max-width: 700px) {
     .user-guide-2 > p {
-        font-size: 1.8vh;
+        font-size: 1.7vh;
     }
 
      .invis-padding {
-        height: calc(95vh + 100vw);
+        height: calc(75vh + 60vw);
     }
 
     footer > hr {
@@ -747,7 +765,7 @@ footer > p {
     }
 
     .about > h2 {
-        font-size: 4vh;
+        font-size: 8vw;
         text-align: center;
     }
 
@@ -783,34 +801,42 @@ footer > p {
         width: fit-content;
         border-radius: 0;
         border: none;
-        padding-top: 12vh;
+        padding-top: 25vh;
         padding-bottom: 20vh;
         background-image: linear-gradient(to bottom, #ffffff00, #ffffff36, #ffffff00);
+        scroll-margin-top: 5vh;
 
     }
 
     .user-guide-2 {
         width: 100%;
-        border-radius: 30px;
+        border-radius: 0;
         border: none;
-        padding-top: 3vh;
-        background-image: linear-gradient(to bottom, #ffffff00, #ffffff5d, #ffffff54, #ffffff5d, #ffffff00);
-        box-shadow: #d9d9d91e 0 0 8px;
+        padding: 5vh 8vw ;
+        margin: 0 3vw;
+        background-image: linear-gradient(to bottom, #ffffff00, #ffffff5d,  #ffffff5d, #ffffff00);
+        /* box-shadow: #d9d9d91e 0 0 8px; */
         text-align: justify;
     }
 
     .user-guide-2 > h2 {
-        font-size: 3vh;
+        font-size: 6.5vw;
         width: fit-content;
+        opacity: 0.95;
+    }
+
+    .user-guide-2 > p {
+        font-size: 4.5vw;
     }
 
     #userGuide {
-        font-size: 2vh;
-        border: solid 1px #d9d9d9;
+        font-size: 5vw;
+        border: solid 2px #d9d9d9;
+        border-radius: 10px;
     }
 
     .invis-padding {
-        height: calc(195vh + 255vw);
+        height: calc(255vh + 205vw);
     }
 
     .icons {
@@ -867,5 +893,15 @@ footer > p {
     .ellipse4 {
         width: 14vw;
         border-width: 2px;
+    }
+
+    .invis-padding {
+        height: calc(220vh + 245vw);
+    }
+  }
+
+  @media screen and (max-height: 700px) {
+    .invis-padding {
+        height: calc(240vh + 255vw);
     }
   }
