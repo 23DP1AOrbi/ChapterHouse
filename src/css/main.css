@@ -217,7 +217,7 @@ h1, h2 {
 }
 
 hr {
-    color: #ffcc42;
+    border-color: #ffcc42;
 }
 
 .thin-hr {
@@ -775,6 +775,10 @@ footer > p {
         border-width: 3px;
     }
 
+    .download-sect {
+        scroll-margin-top: 40vh;    
+    }
+    
     .user-guide {
         width: fit-content;
         border-radius: 0;
