@@ -10,13 +10,13 @@
     <title>ChapterHouse</title>
 </head>
 <body id="1">
-    <header >
-        <a href="#1"><img src="src/img/logo.png" alt=""></a>
+    <header>
+        <a href="#1" onclick="removeNav()"><img src="src/img/logo.png" ></a>
         <nav id="links">
-            <a href="#2">Top Trending</a>
-            <a href="#3">About Us</a>
-            <a href="#4">User Guide</a>
-            <a href="#5" class="download-button">Download</a>
+            <a href="#2" onclick="removeNav()">Top Trending</a>
+            <a href="#3" onclick="removeNav()">About Us</a>
+            <a href="#4" onclick="removeNav()">User Guide</a>
+            <a href="#5" class="download-button" onclick="removeNav()">Download</a>
         </nav>
         <a href="javascript:void(0);" id="hamb" class="icon" onclick="showNav()">
             <i class="fa fa-bars"></i>
@@ -57,15 +57,17 @@
                         We’ve handpicked a diverse selection of titles for you to explore, search, filter, and sort with ease. Whether you’re
                         in the mood for a gripping mystery, an inspiring biography, or a timeless classic, finding your next great read is just a few clicks away.</p>
                 </div>
+                <hr class="thin-hr">
                 <hr>
                 <div id="5" class="download-sect">
                     <div class="ellipse1"></div>
                     <div class="ellipse2"></div>
                     <h3><a href="">Download</a></h3>
-                    <div class="ellipse1"></div>
-                    <div class="ellipse2"></div>
+                    <div class="ellipse3"></div>
+                    <div class="ellipse4"></div>
                 </div>
                 <hr>
+                <hr class="thin-hr">
                 <div id="4" class="user-guide">
                     <div class="user-guide-2">
                         <h2>User Guide</h2>
@@ -74,7 +76,7 @@
                             the system to navigating its features with confidence. We’ve kept 
                             things simple, clear, and beginner-friendly so 
                             you can spend less time figuring things out and more time discovering great reads.</p>
-                        <h3><a href="#userGuide">Click Here</a></h3>
+                        <h3><a href="userGuide.txt" download id="userGuide">Click Here</a></h3>
                     </div>
                 </div>
             </div>
@@ -83,11 +85,26 @@
     </main>
     <footer>
         <div class="icons">
-            <a href="#messenger"><img src="src/img/messenger.png"></a>
-            <a href="#twitter"><img src="src/img/twt.png"></a>
-            <a href="#facebook"><img src="src/img/facebook.png"></a>
-            <a href="#whatsapp"><img src="src/img/wpp.png"></a>
-            <a href="#instagram"><img src="src/img/insta.png"></a>
+            <div class="icon-wrap">
+                <div class="border-spin"></div>
+                <a href="#messenger"><img src="src/img/messenger.png"></a>
+            </div>
+            <div class="icon-wrap">
+                <div class="border-spin"></div>
+                <a href="#twitter"><img src="src/img/twt.png"></a>
+            </div>
+            <div class="icon-wrap">
+                <div class="border-spin"></div>
+                <a href="#facebook"><img src="src/img/facebook.png"></a>
+            </div>
+            <div class="icon-wrap">
+                <div class="border-spin"></div>
+                <a href="#whatsapp"><img src="src/img/wpp.png"></a>
+            </div>
+            <div class="icon-wrap">
+                <div class="border-spin"></div>
+                <a href="#instagram"><img src="src/img/insta.png"></a>
+            </div>
         </div>
         <div class="foot-extra">
             <a href="#1">Home</a>

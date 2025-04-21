@@ -6,6 +6,8 @@ body, html {
     background-image: linear-gradient(#d1ad4a 30%, #1D121F 50%);
     scroll-margin-top: 25vh;
     text-align: center;
+    scrollbar-width: thin;
+    scrollbar-color:  #d1ad4a #1D121F;
 }
 
 body {
@@ -19,7 +21,6 @@ body {
 nav {
     padding: 1vh 0;
     background-color: #1D121F;
-    /* text-align: right; */
     display: flex;
     gap: 7vw;
     align-items: center;
@@ -39,13 +40,17 @@ header{
     z-index: 10;
 }
 
-header > a > img{
+header >  a > img {
     height: 6vh;
     margin-left: 2vw;
 }
 
 #hamb {
     display: none;
+}
+
+header >  a > img:hover {
+    opacity: 0.9;
 }
 
 nav > a {
@@ -57,16 +62,35 @@ nav > a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* width: 20vw; */
     row-gap: 4vw;
+    background-image: linear-gradient(to right, aliceblue, #d1ad4a);
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: 0.2s ease-in-out;
 }
 
+nav > a:hover, nav > a:focus, nav > a:active {
+    opacity: 0.8;
+    background-size: 100% 0.1em;
+}
 
 .download-button {
     color: #1D121F;
     background-color: aliceblue;
     padding: 5px 10px;
     border-radius: 6px;
+    background-image: linear-gradient(aliceblue, #d1ad4a);
+    background-size: 100% 0.1em;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    transition: 0.2s ease-in-out;
+}
+
+.download-button:hover, .download-button:focus, .download-button:active {
+    background-size: 100% 100%;
+    opacity: 1;
 }
 
 main {
@@ -161,6 +185,7 @@ h1, h2 {
 
 .book-format > img {
     width: 14vw;
+    border-radius: 5px;
 }
 
 .book-format > h3, .book-format > p {
@@ -180,8 +205,8 @@ h1, h2 {
     color: aliceblue;
     width: 45vw;
     margin: auto;
-    margin-top: 18vw;
-    margin-bottom: 18vw;
+    margin-top: 25vw;
+    margin-bottom: 25vw;
     font-size: 2.4vh;
     font-family: "IM Fell DW Pica SC", serif;
     scroll-margin-top: 40vh;
@@ -195,6 +220,11 @@ hr {
     color: #ffcc42;
 }
 
+.thin-hr {
+    margin: 0;
+    border-bottom: 1px;
+}
+
 .download-sect {
     display: flex;
     justify-content: center;
@@ -203,6 +233,7 @@ hr {
     border-top: solid 3px #e9ba3a; 
     border-bottom: solid 3px #e9ba3a;
     scroll-margin-top: 35vh;
+    position: relative;
 }
 
 .download-sect > h3 > a {
@@ -214,22 +245,64 @@ hr {
     font-size: 3vw;
     text-decoration: none;
     text-decoration-color: #1D121F;
+    background-image: linear-gradient(to right, #1D121F, #1D121F);
+    background-size: 0% 0.1em;
+    background-position-y: 80%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    transition: 0.2s ease-in-out;
 }
 
-/* .ellipse1 {
+.download-sect > h3 > a:hover, .download-sect > h3 > a:focus, .download-sect > h3 > a:active {
+    opacity: 0.9;
+    background-size: calc(100% - 9vw) 0.05em;
+}
+
+
+
+ .ellipse1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
     width: 10vw;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    border: solid #ffcc42 3px;
+} 
 
-    height: 5vw;
+.ellipse2 {
+    position: absolute;
+    left: 0;
+    top: 1px;
+    bottom: 1px;
+    width: 9.5vw;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    border: solid #ffcc42 3px;
+}
 
-  background: gold;
+.ellipse3 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 10vw;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    border: solid #ffcc42 3px;
+}
 
-  border-radius: 5vw 5vw 0 0;
-  transform: rotate(90deg);
-
-    /* -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; 
-} */
+.ellipse4 {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    bottom: 1px;
+    width: 9.5vw;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    border: solid #ffcc42 3px;
+}
 
 
 .user-guide {
@@ -237,9 +310,9 @@ hr {
     width: fit-content;
     justify-content: center;
     margin: auto;
-    margin-top: 35vh;
-    margin-bottom: 18vh;
-    padding: 2vw 6vw;
+    margin-top: 26vw;
+    margin-bottom: 20vw;
+    padding: 2vw 3vw;
     border-radius: 350px;
     border: solid 2.5px #ffffff09;
     background-image: linear-gradient(to bottom, #ffffff0a, #ffffff36);
@@ -248,9 +321,10 @@ hr {
 
 .user-guide-2 {
     width: 50vh;
-    padding: 2vw 10vw;
+    width: calc(30vh + 25vw);
+    padding: 2vw 2vw;
     border: solid 2px #ffffff99;
-    border-radius: 250px;
+    border-radius: 350px;
     background-image: linear-gradient(to bottom, #ffffff85, #ffffff11);
     color: #2a152d;
     display: flex;
@@ -272,21 +346,21 @@ hr {
     font-size: 2.2vh;
 }
 
-.user-guide-2 > h3  > a{
+.user-guide-2 > h3  > a {
     color: aliceblue;
     text-decoration: none;
     background-image: linear-gradient( #532260, #2a152d);
     font-family: "IM Fell Great Primer SC", serif;
     padding: 0.5vh 2vw;
     font-size: 2vw;
-    border: solid 4px #d9d9d9;
+    border: solid 3px #d9d9d9;
     border-radius: 25px;
     margin: 0;
 }
 
 .invis-padding {
     /* min-height: 260vw; */
-    height: calc(105vh + 90vw);
+    height: calc(100vh + 120vw);
 }
 
 footer {
@@ -307,11 +381,54 @@ footer > hr {
     display: flex;
     justify-content: center;
     gap: 2vw;
+    position: relative;
 }
 
-.icons > a > img {
-    width: 3.5vw;
+.icon-wrap {
+    width: 4.5vw;
+    height: 4.5vw;
+    position: relative;
 }
+
+.border-spin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2.5px dashed transparent;
+    border-radius: 50%;
+    padding: 1vw;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.icon-wrap > a > img {
+    width: 3.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    pointer-events: auto;
+    z-index: 2;
+    transition: opacity 0.3s;
+}
+
+.icon-wrap:hover .border-spin {
+    animation: spin 2s linear infinite;
+    border-color: #ffcc42;
+  }
+
+.icon-wrap > a > img:hover {
+    opacity: 0.7;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotateZ(180deg);
+    }
+}
+
 
 .foot-extra {
     display: flex;
@@ -327,6 +444,10 @@ footer > hr {
     font-size: 1.5vw;
 }
 
+.foot-extra > a:hover {
+    opacity: 0.7;
+}
+
 footer > p {
     font-family: "IM Fell Great Primer SC", serif;
     font-size: 1vw;
@@ -335,7 +456,161 @@ footer > p {
     opacity: 0.5;
 }
 
+@media screen and (max-width: 1400px) {
+    header > nav > a {
+        font-size: 2vw;
+    }
+
+    .invis-padding {
+        height: calc(100vh + 115vw);
+    }
+
+    .icon-wrap > a > img {
+        width: 4vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    header >  a > img {
+        height: 6vw;
+    }
+
+    header > nav > a {
+        font-size: 2.5vw;
+    }
+
+    .hero-txt, .hero-txt > h3 {
+        font-size: 4vw;
+    }
+
+    .aft-hr > h2 {
+        font-size: 6vw;
+        padding-bottom: 4vh;
+    }
+
+    .book-format {
+        width: 18vw;
+        height: 32vh;
+        height: min-content;
+        border-radius: 15px;
+        padding: 2vh 3vh ;
+    }
+    .book-format > img {
+        width: 18vw;
+    }
+
+    .book-format > h3, .book-format > p {
+        width: 100%;
+        font-size: 1.8vw;
+    }
+
+    .about {
+        font-size: 2vw;
+        width: 45vw;
+        text-align: justify;
+    }
+
+    .about > h2 {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .download-sect > h3 > a {
+        font-size: 5vw;
+    }
+
+    .user-guide-2 > h2 {
+        font-size: 3vw;
+        width: fit-content;
+    }
+
+    .invis-padding {
+        height: calc(105vh + 115vw);
+    }
+
+    footer > hr {
+        width: 50%;
+    }
+
+    .icons {
+        gap: 3vw;
+    }
+
+    .border-spin {
+        display: none;
+    }
+
+    .icon-wrap > a > img {
+        width: 5vw;
+    }
+
+    .foot-extra > a {
+        font-size: 2.2vw;
+    }
+
+    footer > p {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    header > nav > a {
+        font-size: 2.7vw;
+    }
+
+    .about {
+        font-size: 2.5vw;
+    }
+    .user-guide-2 > h2 {
+        font-size: 4vw;
+    }
+
+    .user-guide-2 > p {
+        font-size: 2vh;
+    }
+
+    #userGuide {
+        font-size: 3vw;
+    }
+
+    .border-spin {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .user-guide-2 > p {
+        font-size: 1.8vh;
+    }
+
+     .invis-padding {
+        height: calc(95vh + 100vw);
+    }
+
+    footer > hr {
+        width: 55%;
+    }
+
+    .icons {
+        gap: 4vw;
+    }
+
+    .icon-wrap > a > img {
+        width: 6vw;
+    }
+
+    .foot-extra > a {
+        font-size: 2.5vw;
+    }
+}
+
 @media screen and (max-width: 600px) {
+
+    html {
+        scrollbar-width: none;
+    }
 
     header {
         overflow: hidden;
@@ -386,20 +661,30 @@ footer > p {
         align-items: start;
     }
 
-    nav > a {
+    header > nav > a {
         overflow: hidden;
         display: flex;
         flex-direction: column;
         justify-content: left;
         padding: 2vw 0;
-        font-size: 5vw;
+        font-size: 2vh;
+        
     }
 
     .download-button {
         width: fit-content;
+        border-radius: 0;
         background-color:transparent;
         color: aliceblue;
         padding: 2vw 0;
+        background-image: linear-gradient(to right, aliceblue, #d1ad4a);
+        background-size: 0% 0.1em;
+        background-position-y: 100%;
+    }
+
+    .download-button:hover, .download-button:focus, .download-button:active {
+        opacity: 0.9;
+        background-size: 100% 0.1em;
     }
 
     .hero-sect {
@@ -434,6 +719,7 @@ footer > p {
 
     .book-format {
         height: fit-content;
+        width: fit-content;
         margin: 4vh 0;
         border-radius: 15px;
         padding: 2vh;
@@ -449,13 +735,15 @@ footer > p {
     }
 
     .book-format > p {
-        font-size: 1.5vh;
+        font-size: 2vh;
     }
 
     .about {
         width: 80vw;
         text-align: justify;
-        margin-bottom: 25vh;
+        margin-top: 25vh;
+        margin-bottom: 30vh;
+        font-size: 4vw;
     }
 
     .about > h2 {
@@ -464,15 +752,35 @@ footer > p {
     }
 
     .download-sect > h3 > a {
-        font-size: 5vh;
+        font-size: 4vh;
+    }
+
+    .ellipse1 {
+        width: 14vw;
+        border-width: 3px;
+    }
+
+    .ellipse2 {
+        width: 13vw;
+        border-width: 3px;
+    }
+
+    .ellipse3 {
+        width: 14vw;
+        border-width: 3px;
+    }
+
+    .ellipse4 {
+        width: 13vw;
+        border-width: 3px;
     }
 
     .user-guide {
         width: fit-content;
         border-radius: 0;
         border: none;
-        padding-top: 15vh;
-        padding-bottom: 15vh;
+        padding-top: 12vh;
+        padding-bottom: 20vh;
         background-image: linear-gradient(to bottom, #ffffff00, #ffffff36, #ffffff00);
 
     }
@@ -488,24 +796,28 @@ footer > p {
     }
 
     .user-guide-2 > h2 {
-        font-size: 3.5vh;
+        font-size: 3vh;
         width: fit-content;
     }
 
-    .user-guide-2 > h3 > a {
-        font-size: 3vh;
+    #userGuide {
+        font-size: 2vh;
         border: solid 1px #d9d9d9;
     }
 
     .invis-padding {
-        height: calc(230vh + 230vw);
+        height: calc(195vh + 255vw);
     }
 
     .icons {
-        gap: 4vw;
+        gap: 6.5vw;
     }
 
-    .icons > a > img {
+    .border-spin {
+        display: none;
+    }
+
+    .icon-wrap > a > img {
         width: 8vw;
     }
 
@@ -515,6 +827,7 @@ footer > p {
 
     .foot-extra {
         margin-top: 3vh;
+        gap: 6vw;
     }
 
     .foot-extra > a {
@@ -525,4 +838,30 @@ footer > p {
         font-size: 2.5vw;
     }
 
+  }
+
+  @media screen and (max-width: 500px) {
+    .download-sect > h3 > a {
+        font-size: 4vh;
+    }
+
+    .ellipse1 {
+        width: 15vw;
+        border-width: 2px;
+    }
+
+    .ellipse2 {
+        width: 14vw;
+        border-width: 2px;
+    }
+
+    .ellipse3 {
+        width: 15vw;
+        border-width: 2px;
+    }
+
+    .ellipse4 {
+        width: 14vw;
+        border-width: 2px;
+    }
   }
