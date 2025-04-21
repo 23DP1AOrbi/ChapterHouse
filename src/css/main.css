@@ -363,7 +363,7 @@ hr {
 }
 
 .invis-padding {
-    height: calc(90vh + 120vw);
+    height: calc(100vh + 120vw);
 }
 
 footer {
@@ -383,13 +383,13 @@ footer > hr {
 .icons {
     display: flex;
     justify-content: center;
-    gap: 2vw;
+    gap: 1.5vw;
     position: relative;
 }
 
 .icon-wrap {
-    width: 4.5vw;
-    height: 4.5vw;
+    width: 4vw;
+    height: 4vw;
     position: relative;
 }
 
@@ -407,7 +407,7 @@ footer > hr {
 }
 
 .icon-wrap > a > img {
-    width: 3.5vw;
+    width: 3vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -465,7 +465,7 @@ footer > p {
     }
 
     .invis-padding {
-        height: calc(100vh + 100vw);
+        height: calc(110vh + 100vw);
     }
 
     .icon-wrap > a > img {
@@ -529,7 +529,7 @@ footer > p {
     }
 
     .invis-padding {
-        height: calc(95vh + 100vw);
+        height: calc(115vh + 100vw);
     }
 
     footer > hr {
@@ -579,7 +579,7 @@ footer > p {
     }
 
     .invis-padding {
-        height: calc(85vh + 95vw);
+        height: calc(85vh + 120vw);
     }
 
     .border-spin {
@@ -594,17 +594,22 @@ footer > p {
     }
 
     .invis-padding {
-        height: calc(75vh + 85vw);
+        height: calc(75vh + 105vw);
     }
 }
 
 @media screen and (max-width: 700px) {
+
+    .user-guide-2 {
+        width: 40vh;
+    }
+
     .user-guide-2 > p {
-        font-size: 1.7vh;
+        font-size: 1.5vh;
     }
 
      .invis-padding {
-        height: calc(75vh + 60vw);
+        height: calc(75vh + 100vw);
     }
 
     footer > hr {
@@ -836,7 +841,7 @@ footer > p {
     }
 
     .invis-padding {
-        height: calc(255vh + 205vw);
+        height: calc(205vh + 305vw);
     }
 
     .icons {
@@ -902,6 +907,6 @@ footer > p {
 
   @media screen and (max-height: 700px) {
     .invis-padding {
-        height: calc(240vh + 255vw);
+        height: calc(250vh + 255vw);
     }
   }
