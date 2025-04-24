@@ -121,7 +121,7 @@ main {
 .hero-txt {
     display: flex;
     flex-direction: column;
-    font-size: 3vw;
+    font-size: 2vw;
     margin-left: 10vw;
     width: fit-content;
     text-align: left;
@@ -138,7 +138,7 @@ h1, h2 {
     color: aliceblue;
     font-family: "IM Fell DW Pica SC", serif;
     margin: 0;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .aft-hr {
@@ -156,8 +156,8 @@ h1, h2 {
 .aft-hr > h2 {
     display: flex;
     justify-content: center;
-    font-size: 4vw;
-    padding: 2vh 0 5vh;
+    font-size: 3vw;
+    padding: 4vh 0 5vh;
 }
 
 .book-sect {
@@ -166,11 +166,11 @@ h1, h2 {
     width: 100%;
     background-image: linear-gradient(to right, #ffcd4236 0%, #ebe0c43b 100%);
     padding: 2vw 0;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .book-format {
-    padding: 2vh 2vw;
+    padding: 2vh 1.5vw;
     border-radius: 30px;
     background-color: rgba(17, 10, 18, 0.6);
     width: max-content;
@@ -184,14 +184,14 @@ h1, h2 {
 }
 
 .book-format > img {
-    width: 14vw;
+    width: 12vw;
     border-radius: 5px;
 }
 
 .book-format > h3, .book-format > p {
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     margin: 0;
-    width: 14vw;
+    width: 12vw;
     padding: 1vh 0 0;
     text-align: left;
 }
@@ -337,7 +337,7 @@ hr {
     color: #d9d9d9;
     width: 15vw;
     padding: 0.5vh 3vw;
-    border-radius: 24px;
+    border-radius: 35px;
     font-size: 2.5vw;
 }
 
@@ -476,19 +476,19 @@ footer > p {
 @media screen and (max-width: 1200px) {
 
     header >  a > img {
-        height: 6vw;
+        height: 5vw;
     }
 
     header > nav > a {
-        font-size: 2.5vw;
+        font-size: 2.2vw;
     }
 
     .hero-txt, .hero-txt > h3 {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .aft-hr > h2 {
-        font-size: 6vw;
+        font-size: 4vw;
         padding-bottom: 4vh;
     }
 
@@ -505,7 +505,7 @@ footer > p {
 
     .book-format > h3, .book-format > p {
         width: 100%;
-        font-size: 1.8vw;
+        font-size: 1.5vw;
     }
 
     .about {
@@ -559,19 +559,28 @@ footer > p {
 
 @media screen and (max-width: 1000px) {
 
+    header >  a > img {
+        height: 5vw;
+    }
+
     header > nav > a {
-        font-size: 2.7vw;
+        font-size: 2vw;
+    }
+
+    .hero-txt, .hero-txt > h3 {
+        font-size: 4vw;
     }
 
     .about {
         font-size: 2.5vw;
     }
+
     .user-guide-2 > h2 {
         font-size: 4vw;
     }
 
     .user-guide-2 > p {
-        font-size: 2vh;
+        font-size: 2vw;
     }
 
     #userGuide {
@@ -743,22 +752,23 @@ footer > p {
     .book-format {
         height: fit-content;
         width: fit-content;
-        margin: 4vh 0;
+        margin: 2vh 0;
         border-radius: 15px;
         padding: 2vh;
     }
 
     .book-format > img {
-        width: 45vw;
+        width: 35vw;
+        /* height: 40vw; */
     }
 
     .book-format > h3, .book-format > p  {
         width: 100%;
-        font-size: 2vh;
+        font-size: 1.5vh;
     }
 
     .book-format > p {
-        font-size: 2vh;
+        font-size: 1.5vh;
     }
 
     .about {
@@ -905,8 +915,8 @@ footer > p {
     }
   }
 
-  @media screen and (max-height: 700px) {
+  /* @media screen and (max-height: 700px) {
     .invis-padding {
         height: calc(250vh + 255vw);
     }
-  }
+  } */
