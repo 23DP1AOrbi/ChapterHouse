@@ -41,7 +41,7 @@ header{
 }
 
 header >  a > img {
-    height: 6vh;
+    height: 4vw;
     margin-left: 2vw;
 }
 
@@ -91,6 +91,10 @@ nav > a:hover, nav > a:focus, nav > a:active {
 .download-button:hover, .download-button:focus, .download-button:active {
     background-size: 100% 100%;
     opacity: 1;
+}
+
+.body-wrapper {
+    position: relative;
 }
 
 main {
@@ -151,6 +155,12 @@ h1, h2 {
     border-top: solid #fff 3px;
     z-index: 2;
     scroll-margin-top: 10vh;
+
+}
+
+.aft-hr-spacer {
+    width: 100%;
+
 }
 
 .aft-hr > h2 {
@@ -236,7 +246,7 @@ hr {
     position: relative;
 }
 
-.download-sect > h3 > a {
+#dwnld-btn {
     background-color: #e9ba3a;
     color: #1d121f;
     font-family: "IM Fell Great Primer SC", serif;
@@ -253,12 +263,10 @@ hr {
     transition: 0.2s ease-in-out;
 }
 
-.download-sect > h3 > a:hover, .download-sect > h3 > a:focus, .download-sect > h3 > a:active {
+#dwnld-btn:hover, #dwnld-btn:focus, #dwnld-btn:active {
     opacity: 0.9;
     background-size: calc(100% - 9vw) 0.05em;
 }
-
-
 
  .ellipse1 {
     position: absolute;
@@ -313,23 +321,23 @@ hr {
     margin-top: 26vw;
     margin-bottom: 20vw;
     padding: 2vw 3vw;
-    border-radius: 350px;
+    border-radius: 30vw;
     border: solid 2.5px #ffffff09;
     background-image: linear-gradient(to bottom, #ffffff0a, #ffffff36);
     scroll-margin-top: 35vh;
 }
 
 .user-guide-2 {
-    width: 50vh;
-    width: calc(30vh + 25vw);
-    padding: 2vw 2vw;
+    width: fit-content;
+    max-width: 40vw;
+    padding: 2vw 4vw;
     border: solid 2px #ffffff99;
-    border-radius: 350px;
+    border-radius: 30vw;
     background-image: linear-gradient(to bottom, #ffffff85, #ffffff11);
     color: #2a152d;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
 }
 
 .user-guide-2 > h2 {
@@ -343,7 +351,7 @@ hr {
 
 .user-guide-2 > p {
     font-family: "IM Fell DW Pica SC", serif;
-    font-size: 2.2vh;
+    font-size: 1.3vw;
 }
 
 #userGuide {
@@ -360,10 +368,6 @@ hr {
 
 #userGuide:hover {
     opacity: 0.9;
-}
-
-.invis-padding {
-    height: calc(100vh + 120vw);
 }
 
 footer {
@@ -432,12 +436,16 @@ footer > hr {
     }
 }
 
+footer {
+    height: fit-content;
+    padding-top: 40px;
+}
 
 .foot-extra {
     display: flex;
     justify-content: center;
     gap: 5vw;
-    margin-top: 1.5vh;
+    margin-top: 1vh;
 }
 
 .foot-extra > a {
@@ -464,96 +472,8 @@ footer > p {
         font-size: 2vw;
     }
 
-    .invis-padding {
-        height: calc(110vh + 100vw);
-    }
-
-    .icon-wrap > a > img {
-        width: 4vw;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-
-    header >  a > img {
-        height: 5vw;
-    }
-
-    header > nav > a {
-        font-size: 2.2vw;
-    }
-
-    .hero-txt, .hero-txt > h3 {
-        font-size: 3vw;
-    }
-
-    .aft-hr > h2 {
-        font-size: 4vw;
-        padding-bottom: 4vh;
-    }
-
-    .book-format {
-        width: 18vw;
-        height: 32vh;
-        height: min-content;
-        border-radius: 15px;
-        padding: 2vh 3vh ;
-    }
-    .book-format > img {
-        width: 18vw;
-    }
-
-    .book-format > h3, .book-format > p {
-        width: 100%;
-        font-size: 1.5vw;
-    }
-
-    .about {
-        font-size: 2vw;
-        width: 45vw;
-        text-align: justify;
-    }
-
-    .about > h2 {
-        font-size: 4vw;
-        text-align: center;
-    }
-
-    .download-sect > h3 > a {
-        font-size: 5vw;
-    }
-
-    .user-guide-2 > h2 {
-        font-size: 3vw;
-        width: fit-content;
-    }
-
-    .invis-padding {
-        height: calc(115vh + 100vw);
-    }
-
-    footer > hr {
-        width: 50%;
-    }
-
-    .icons {
-        gap: 3vw;
-    }
-
-    .border-spin {
-        display: none;
-    }
-
-    .icon-wrap > a > img {
-        width: 5vw;
-    }
-
-    .foot-extra > a {
-        font-size: 2.2vw;
-    }
-
-    footer > p {
-        font-size: 1.5vw;
+    .user-guide-2 > p {
+        font-size: 1.7vw;
     }
 }
 
@@ -568,15 +488,50 @@ footer > p {
     }
 
     .hero-txt, .hero-txt > h3 {
+        font-size: 3.5vw;
+    }
+
+    .aft-hr > h2 {
         font-size: 4vw;
+    }
+
+    .book-format {
+        width: 18vw;
+        height: 32vh;
+        height: min-content;
+        border-radius: 15px;
+        padding: 10px 15px;
+
+    }
+    .book-format > img {
+        width: 18vw;
+    }
+
+    .book-format > h3, .book-format > p {
+        width: 100%;
+        font-size: 1.5vw;
     }
 
     .about {
         font-size: 2.5vw;
     }
 
-    .user-guide-2 > h2 {
+    #dwnld-btn {
         font-size: 4vw;
+    }
+
+    .user-guide {
+        border-radius: 25vw;
+    }
+
+    .user-guide-2 {
+        border-radius: 25vw;
+        max-width: 50vw;
+    }
+
+    .user-guide-2 > h2 {
+        width: fit-content;
+        font-size: 3.2vw;
     }
 
     .user-guide-2 > p {
@@ -584,41 +539,54 @@ footer > p {
     }
 
     #userGuide {
-        font-size: 3vw;
-    }
-
-    .invis-padding {
-        height: calc(85vh + 120vw);
+        font-size: 2.5vw;
     }
 
     .border-spin {
         display: none;
     }
+
+    footer > hr {
+        width: 50%;
+    }
+
+    .icons {
+        gap: 3vw;
+    }
+
+    .icon-wrap > a > img {
+        width: 4.5vw;
+    }
+
+    .foot-extra > a {
+        font-size: 2vw;
+        margin-top: 5px;
+    }
+
+    footer > p {
+        font-size: 1.5vw;
+    }
 }
 
 @media screen and (max-width: 800px) {
 
-    .user-guide-2 > p {
-        font-size: 1.7vh;
+    .user-guide-2 {
+        max-width: 60vw;
     }
 
-    .invis-padding {
-        height: calc(75vh + 105vw);
+    .user-guide-2 > p {
+        font-size: 2.2vw;
     }
 }
 
 @media screen and (max-width: 700px) {
 
     .user-guide-2 {
-        width: 40vh;
+        max-width: 70vw;
     }
 
     .user-guide-2 > p {
-        font-size: 1.5vh;
-    }
-
-     .invis-padding {
-        height: calc(75vh + 100vw);
+        font-size: 2.5vw;
     }
 
     footer > hr {
@@ -784,7 +752,7 @@ footer > p {
         text-align: center;
     }
 
-    .download-sect > h3 > a {
+    #dwnld-btn {
         font-size: 4vh;
     }
 
@@ -830,7 +798,6 @@ footer > p {
         padding: 5vh 8vw ;
         margin: 0 3vw;
         background-image: linear-gradient(to bottom, #ffffff00, #ffffff5d,  #ffffff5d, #ffffff00);
-        /* box-shadow: #d9d9d91e 0 0 8px; */
         text-align: justify;
     }
 
@@ -850,9 +817,9 @@ footer > p {
         border-radius: 10px;
     }
 
-    .invis-padding {
+    /* .invis-padding {
         height: calc(205vh + 305vw);
-    }
+    } */
 
     .icons {
         gap: 6.5vw;
@@ -886,7 +853,7 @@ footer > p {
   }
 
   @media screen and (max-width: 500px) {
-    .download-sect > h3 > a {
+    #dwnld-btn {
         font-size: 4vh;
     }
 
@@ -910,9 +877,9 @@ footer > p {
         border-width: 2px;
     }
 
-    .invis-padding {
+    /* .invis-padding {
         height: calc(220vh + 245vw);
-    }
+    } */
   }
 
   /* @media screen and (max-height: 700px) {
