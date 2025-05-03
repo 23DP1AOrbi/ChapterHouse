@@ -668,7 +668,6 @@ footer > p {
         justify-content: left;
         padding: 2vw 0;
         font-size: 2vh;
-        
     }
 
     .download-button {
@@ -727,7 +726,6 @@ footer > p {
 
     .book-format > img {
         width: 35vw;
-        /* height: 40vw; */
     }
 
     .book-format > h3, .book-format > p  {
@@ -817,10 +815,6 @@ footer > p {
         border-radius: 10px;
     }
 
-    /* .invis-padding {
-        height: calc(205vh + 305vw);
-    } */
-
     .icons {
         gap: 6.5vw;
     }
@@ -876,14 +870,4 @@ footer > p {
         width: 14vw;
         border-width: 2px;
     }
-
-    /* .invis-padding {
-        height: calc(220vh + 245vw);
-    } */
-  }
-
-  /* @media screen and (max-height: 700px) {
-    .invis-padding {
-        height: calc(250vh + 255vw);
-    }
-  } */
+}
