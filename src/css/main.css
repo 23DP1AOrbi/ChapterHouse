@@ -180,10 +180,10 @@ h1, h2 {
 }
 
 .book-format {
-    padding: 2vh 1.5vw;
-    border-radius: 30px;
+    padding: 1vw 2vw;
+    border-radius: 20px;
     background-color: rgba(17, 10, 18, 0.6);
-    width: max-content;
+    width: fit-content;
     height: fit-content;
     color: aliceblue;
     font-family: "IM Fell Great Primer SC", serif;
@@ -194,14 +194,14 @@ h1, h2 {
 }
 
 .book-format > img {
-    width: 12vw;
+    width: 14vw;
     border-radius: 5px;
 }
 
 .book-format > h3, .book-format > p {
     font-size: 1.2vw;
     margin: 0;
-    width: 12vw;
+    width: 14vw;
     padding: 1vh 0 0;
     text-align: left;
 }
@@ -217,7 +217,7 @@ h1, h2 {
     margin: auto;
     margin-top: 25vw;
     margin-bottom: 25vw;
-    font-size: 2.4vh;
+    font-size: 1.8vw;
     font-family: "IM Fell DW Pica SC", serif;
     scroll-margin-top: 40vh;
 }
@@ -472,8 +472,58 @@ footer > p {
         font-size: 2vw;
     }
 
+    .hero-txt, .hero-txt > h3 {
+        font-size: 3vw;
+    }
+
+    .aft-hr > h2 {
+        font-size: 4vw;
+    }
+
+    .book-format {
+        width: 18vw;
+        height: 32vh;
+        height: min-content;
+        border-radius: 15px;
+        padding: 2vw 3vw;
+
+    }
+    .book-format > img {
+        width: 18vw;
+    }
+
+    .book-format > h3, .book-format > p {
+        width: 100%;
+        font-size: 1.5vw;
+    }
+
     .user-guide-2 > p {
         font-size: 1.7vw;
+    }
+
+    footer > hr {
+        width: 45%;
+    }
+
+    .icons {
+        gap: 3vw;
+    }
+
+    .icon-wrap > a > img {
+        width: 4vw;
+    }
+
+    .foot-extra {
+        gap: 4vw;
+    }
+
+    .foot-extra > a {
+        font-size: 2vw;
+        margin-top: 5px;
+    }
+
+    footer > p {
+        font-size: 1.5vw;
     }
 }
 
@@ -500,9 +550,9 @@ footer > p {
         height: 32vh;
         height: min-content;
         border-radius: 15px;
-        padding: 10px 15px;
-
+        padding: 2vw 3vw;
     }
+
     .book-format > img {
         width: 18vw;
     }
@@ -558,6 +608,10 @@ footer > p {
         width: 4.5vw;
     }
 
+    .foot-extra {
+        gap: 5vw;
+    }
+
     .foot-extra > a {
         font-size: 2vw;
         margin-top: 5px;
@@ -570,12 +624,77 @@ footer > p {
 
 @media screen and (max-width: 800px) {
 
+    header >  a > img {
+        height: 6vw;
+    }
+
+    header > nav > a {
+        font-size: 2.5vw;
+    }
+
+    .hero-txt, .hero-txt > h3 {
+        font-size: 4.5vw;
+    }
+
+    .aft-hr > h2 {
+        font-size: 5.5vw;
+    }
+
+    .book-format {
+        width: fit-content;
+    }
+
+    .book-format > img {
+        width: 24vw;
+    }
+
+    .book-format > h3, .book-format > p {
+        font-size: 2vw;
+    }
+
+    .about {
+        font-size: 3vw;
+        width: 60vw;
+    }
+
+    .about > h2 {
+        font-size: 5vw;
+    }
+
+    #dwnld-btn {
+        font-size: 5.5vw;
+    }
+
     .user-guide-2 {
         max-width: 60vw;
     }
 
+    .user-guide-2 > h2 {
+        font-size: 3.5vw;
+    }
+
     .user-guide-2 > p {
-        font-size: 2.2vw;
+        font-size: 2.5vw;
+    }
+
+    #userGuide {
+        font-size: 3vw;
+    }
+
+    footer > hr {
+        width: 55%;
+    }
+
+    .icons {
+        gap: 4vw;
+    }
+
+    .icon-wrap > a > img {
+        width: 5vw;
+    }
+
+    .foot-extra > a {
+        font-size: 2.5vw;
     }
 }
 
@@ -585,8 +704,16 @@ footer > p {
         max-width: 70vw;
     }
 
+    .user-guide-2 > h2 {
+        font-size: 4vw;
+    }
+
     .user-guide-2 > p {
-        font-size: 2.5vw;
+        font-size: 3vw;
+    }
+
+    #userGuide {
+        font-size: 3.5vw;
     }
 
     footer > hr {
