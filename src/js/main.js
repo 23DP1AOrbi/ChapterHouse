@@ -5,7 +5,6 @@ if (aftHr && spacer) {
     const updateSpacer = () => {
          spacer.style.height = (aftHr.offsetHeight - 400) + 'px'
 
-
          if (window.innerHeight < 800) {
             spacer.style.height = (aftHr.offsetHeight - 250) + 'px'
          }

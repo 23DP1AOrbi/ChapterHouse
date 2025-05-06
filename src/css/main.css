@@ -506,7 +506,12 @@ footer > p {
     }
 
     .icons {
-        gap: 3vw;
+        gap: 2vw;
+    }
+
+    .icon-wrap {
+        width: 5vw;
+        height: 5vw;
     }
 
     .icon-wrap > a > img {
@@ -592,16 +597,17 @@ footer > p {
         font-size: 2.5vw;
     }
 
-    .border-spin {
-        display: none;
-    }
-
     footer > hr {
         width: 50%;
     }
 
     .icons {
-        gap: 3vw;
+        gap: 1.5vw;
+    }
+
+    .icon-wrap {
+        width: 5.5vw;
+        height: 5.5vw;
     }
 
     .icon-wrap > a > img {
@@ -687,6 +693,10 @@ footer > p {
 
     .icons {
         gap: 4vw;
+    }
+
+    .border-spin {
+        display: none;
     }
 
     .icon-wrap > a > img {
