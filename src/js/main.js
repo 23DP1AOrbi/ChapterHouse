@@ -4,6 +4,15 @@ const spacer = document.querySelector('.aft-hr-spacer')
 if (aftHr && spacer) {
     const updateSpacer = () => {
          spacer.style.height = (aftHr.offsetHeight - 400) + 'px'
+
+
+         if (window.innerHeight < 800) {
+            spacer.style.height = (aftHr.offsetHeight - 250) + 'px'
+         }
+
+         if (window.innerHeight < 600) {
+            spacer.style.height = (aftHr.offsetHeight - 150) + 'px'
+         }
     }
 
     updateSpacer()

@@ -794,7 +794,7 @@ footer > p {
         flex-direction: column;
         justify-content: left;
         padding: 2vw 0;
-        font-size: 2vh;
+        font-size: 20px;
     }
 
     .download-button {
@@ -818,13 +818,13 @@ footer > p {
     }
 
     .hero-txt {
-        font-size: 6vw;
+        font-size: 5vw;
         margin-top: -10vh;
         margin-left: 6vw;
     }
 
     .hero-txt > h3 {
-        font-size: 8vw;
+        font-size: 7vw;
     }
 
     .aft-hr {
@@ -848,7 +848,7 @@ footer > p {
         width: fit-content;
         margin: 2vh 0;
         border-radius: 15px;
-        padding: 2vh;
+        padding: 20px;
     }
 
     .book-format > img {
@@ -857,11 +857,11 @@ footer > p {
 
     .book-format > h3, .book-format > p  {
         width: 100%;
-        font-size: 1.5vh;
+        font-size: 3vw;
     }
 
     .book-format > p {
-        font-size: 1.5vh;
+        font-size: 2.5vw;
     }
 
     .about {
@@ -878,7 +878,7 @@ footer > p {
     }
 
     #dwnld-btn {
-        font-size: 4vh;
+        font-size: 7vw;
     }
 
     .ellipse1 {
@@ -959,7 +959,7 @@ footer > p {
     }
 
     .foot-extra {
-        margin-top: 3vh;
+        margin-top: 3vw;
         gap: 6vw;
     }
 
@@ -970,13 +970,9 @@ footer > p {
     footer > p {
         font-size: 2.5vw;
     }
-
   }
 
   @media screen and (max-width: 500px) {
-    #dwnld-btn {
-        font-size: 4vh;
-    }
 
     .ellipse1 {
         width: 15vw;
