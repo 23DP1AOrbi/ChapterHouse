@@ -43,6 +43,7 @@ header{
 header >  a > img {
     height: 4vw;
     margin-left: 2vw;
+    height: clamp(30px, 4vw, 70px);
 }
 
 #hamb {
@@ -57,6 +58,7 @@ nav > a {
     color: aliceblue;
     text-decoration: none;
     font-size: 1.5vw;
+    font-size: clamp(10px, 1.5vw, 40px);
     font-family: "IM Fell DW Pica SC", serif;
     font-style: normal;
     display: flex;
@@ -126,6 +128,7 @@ main {
     display: flex;
     flex-direction: column;
     font-size: 2vw;
+    font-size: clamp(40px, 2vw, 80px);
     margin-left: 10vw;
     width: fit-content;
     text-align: left;
@@ -138,11 +141,16 @@ h1, h2 {
     margin: 0;
 }
 
+.hero-txt > h1 {
+    font-size: clamp(40px, 4vw, 120px);
+}
+
 .hero-txt > h3 {
     color: aliceblue;
     font-family: "IM Fell DW Pica SC", serif;
     margin: 0;
     font-size: 2vw;
+    font-size: clamp(32px, 2vw, 56px);
 }
 
 .aft-hr {
@@ -167,6 +175,7 @@ h1, h2 {
     display: flex;
     justify-content: center;
     font-size: 3vw;
+    font-size: clamp(28px, 3vw, 80px);
     padding: 4vh 0 5vh;
 }
 
@@ -195,6 +204,7 @@ h1, h2 {
 
 .book-format > img {
     width: 14vw;
+    width: clamp(100px, 14vw, 300px);
     border-radius: 5px;
 }
 
@@ -202,6 +212,7 @@ h1, h2 {
     font-size: 1.2vw;
     margin: 0;
     width: 14vw;
+    width: clamp(100px, 14vw, 300px);
     padding: 1vh 0 0;
     text-align: left;
 }
@@ -209,6 +220,7 @@ h1, h2 {
 .book-format > p {
     opacity: 0.5;
     font-size: 1.2vw;
+    font-size: clamp(10px,1.2vw, 30px);
 }
 
 .about {
@@ -218,12 +230,14 @@ h1, h2 {
     margin-top: 25vw;
     margin-bottom: 25vw;
     font-size: 1.8vw;
+    font-size: clamp(15px, 1.8vw, 32px);
     font-family: "IM Fell DW Pica SC", serif;
     scroll-margin-top: 40vh;
 }
 
 .about > h2 {
     font-size: 3.5vw;
+    font-size: clamp(28px, 3.5vw, 80px);
 }
 
 hr {
@@ -253,6 +267,7 @@ hr {
     padding: 1vw 5vw;
     border-radius: 60px;
     font-size: 3vw;
+    font-size: clamp(40px, 3vw, 64px);
     text-decoration: none;
     text-decoration-color: #1D121F;
     background-image: linear-gradient(to right, #1D121F, #1D121F);
@@ -347,11 +362,13 @@ hr {
     padding: 0.5vh 3vw;
     border-radius: 35px;
     font-size: 2.5vw;
+    font-size: clamp(30px, 2.5vw, 55px);
 }
 
 .user-guide-2 > p {
     font-family: "IM Fell DW Pica SC", serif;
     font-size: 1.3vw;
+    font-size: clamp(14px, 1.3vw, 28px);
 }
 
 #userGuide {
@@ -361,6 +378,7 @@ hr {
     font-family: "IM Fell Great Primer SC", serif;
     padding: 0.5vh 2vw;
     font-size: 2vw;
+    font-size: clamp(20px, 2vw, 45px);
     border: solid 3px #d9d9d9;
     border-radius: 15px;
     margin: 0;
@@ -453,6 +471,7 @@ footer {
     color: #ffcc42;   
     font-family: "IM Fell DW Pica SC", serif;
     font-size: 1.5vw;
+    font-size: clamp(10px, 1.5vw, 25px);
 }
 
 .foot-extra > a:hover {
